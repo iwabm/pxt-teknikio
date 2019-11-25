@@ -14,9 +14,7 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    src: local('Open Sans Regular'), local('OpenSans-Regular'),
-         data-uri('../docs/static/fonts/Open_Sans/OpenSans-Regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         data-uri('../docs/static/fonts/Open_Sans/OpenSans-Regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: local('Open Sans Regular'), local('OpenSans-Regular')
 }
 
 /*******************************
@@ -52,6 +50,18 @@
     background: fade(@black, 20%) !important;
 }
 
+.ui.home {
+    color: #2F5EA8 !important;
+}
+
+.ui.card {
+    background: #5DBCD2 !important;
+
+    .newprojectcard {
+        background: #5DBCD2 !important;
+    }
+}
+
 .sandboxfooter a:not(.thin) {
     color:white !important;
 }
@@ -62,13 +72,12 @@
         padding-top: 0 !important;
     }
     .ui.inverted.menu {
-        background: #104D66;
-        background: linear-gradient(to bottom, #104D66, #D3FFFB);
+        background: #FFFFFF;
     }
     .getting-started-segment {
         margin-top: 3rem !important;
         background-position: 50% 75%;
-        background-color: #D3FFFB; /*#7DFFF8;*/
+        background-color: #FFFFFF;
         background-size: contain;
     }
 }
@@ -90,10 +99,6 @@
 
 .tutorialhint {
     background: #394148;
-}
-
-#tutorialcard .ui.tutorialsegment .avatar-image {
-    background-image: data-uri("../docs/static/tutorial-avatar.png");
 }
 
 .avatar-container .tooltip {
@@ -170,7 +175,6 @@
         right: -6px;
         bottom: -6px;
         width: 130px;
-        background-image: data-uri("../docs/static/tutorial-avatar.png");
         background-repeat: no-repeat;
     }
 }
