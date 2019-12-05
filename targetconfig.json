@@ -1,30 +1,19 @@
 {
     "packages": {
         "approvedOrgs": [
-            "Microsoft",
-            "Adafruit"
+            "Teknikio"
         ],
         "approvedRepos": [
+            "Teknikio/pxt-teknikio"
         ],
         "preferredRepos": [
-            "Adafruit/pxt-crickit"
+            "Teknikio/pxt-teknikio"
         ]
     },
     "languages": [
         "en"
     ],
     "galleries": {
-        "Tutorials": "tutorials",
-        "Cartoon Network": "projects/cartoon-network",
-        "Costumes": "costumes",
-        "Games": "games",
-        "Create and Have Fun": "creative-fun",
-        "Courses": "courses",
-        "learn.adafruit.com": "learnsystem",
-        "Behind the MakeCode Hardware": "behind-the-makecode-hardware"
-    },
-    "firmwareUrls": {
-        "adafruit-circuit-playground-express": "https://learn.adafruit.com/adafruit-circuit-playground-express/adafruit2-uf2-bootloader-details#updating-the-bootloader"
-    },
-    "windowsStoreLink": "ms-windows-store://pdp/?ProductId=9PGZHWSK0PGD"    
+        "Examples": "examples"
+    }
 }
