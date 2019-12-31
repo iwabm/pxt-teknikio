@@ -50,7 +50,7 @@ resource "aws_cloudformation_stack" "ecs_service_int" {
   parameters = {
     ContainerMemory = 1024
     ContainerPort   = 3232
-    ImageUrl        = "937787653866.dkr.ecr.us-east-1.amazonaws.com/pxt-tek-int:latest"
+    ImageUrl        = "487619204073.dkr.ecr.us-east-1.amazonaws.com/pxt-tek-int:302c2464a107d8f1764d068b8af13cd312df5dff"
     StackName       = "${local.aws_vpc_stack_name}-int"
     ServiceName     = "${local.aws_ecs_service_name}-int"
     UseSSL          = "true"
@@ -67,7 +67,7 @@ resource "aws_cloudformation_stack" "vpc_prod" {
   parameters = {
     ClusterName                = "${local.aws_ecs_cluster_name}-prod"
     ExecutionRoleName          = "${local.aws_ecs_execution_role_name}-prod"
-    LoadBalancerCertificateArn = "	arn:aws:acm:us-east-1:487619204073:certificate/52b0dcae-a232-40a1-87ba-780d62243087"
+    LoadBalancerCertificateArn = "arn:aws:acm:us-east-1:487619204073:certificate/52b0dcae-a232-40a1-87ba-780d62243087"
   }
 }
 
@@ -80,7 +80,7 @@ resource "aws_cloudformation_stack" "ecs_service_prod" {
   parameters = {
     ContainerMemory = 1024
     ContainerPort   = 3232
-    ImageUrl        = "937787653866.dkr.ecr.us-east-1.amazonaws.com/teknikio-prod:latest"
+    ImageUrl        = "487619204073.dkr.ecr.us-east-1.amazonaws.com/pxt-tek-int:302c2464a107d8f1764d068b8af13cd312df5dff"
     StackName       = "${local.aws_vpc_stack_name}-prod"
     ServiceName     = "${local.aws_ecs_service_name}-prod"
     UseSSL          = true
